@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <h1><%= title %></h1>
+    <table>
+        <% for(var key in data) { %>
+        <tr>
+            <th><%= key %></th>
+            <td><%= data[key] %></td>
+        </tr>
+        <% } %>
+    </table>
+</body>
+</html>
