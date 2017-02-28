@@ -6,3 +6,11 @@
 ##heroku
 herokuにて公開
 https://vast-badlands-33797.herokuapp.com/
+
+## npm scripts
+
+### task list
+`npm run`
+
+### server up
+`npm run start`
