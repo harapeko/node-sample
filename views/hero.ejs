@@ -8,6 +8,9 @@
 <body>
     <h1><%= title %></h1>
     <p><%= msg %></p>
-    <p><a href="/hero?p1=hello&p2=bye">link</a></p>
+    <form method="post" action="/hero">
+        <input type="text" name="input1" value="<%= input %>">
+        <input type="submit">
+    </form>
 </body>
 </html>

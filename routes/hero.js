@@ -10,6 +10,17 @@ router.get('/', function(req, res, next) {
   res.render('hero', {
       title: 'Hero Page',
       msg: msg,
+      input: ''
+  });
+});
+
+/* POST hero page. */
+router.post('/', function(req, res, next) {
+  var str = req.body.input1
+  res.render('hero', {
+    title: 'HERO Page',
+    msg: 'you typed: ' + str,
+    input: str
   });
 });
 
