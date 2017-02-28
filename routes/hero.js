@@ -3,13 +3,14 @@ var router = express.Router();
 
 /* GET hero page. */
 router.get('/', function(req, res, next) {
+  var p1 = req.query.p1;
+  var p2 = req.query.p2;
+  var msg = (p1 == undefined) ? "" : (p1 + "," + p2);
+
   res.render('hero', {
-      title: 'Hero',
-      data: {
-          '太郎':'taro@yamada',
-          '花子':'hanako@flower',
-      }
-});
+      title: 'Hero Page',
+      msg: msg,
+  });
 });
 
 module.exports = router;
